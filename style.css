@@ -7,16 +7,15 @@
 html {
   font-family: "Quicksand";
   font-size: 1.25rem;
-  background-color: rgb(238, 236, 236);
 }
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(238, 236, 236);
 }
 img {
   max-width: 100%;
   height: auto;
-  position: relative;
 }
 
 header {
@@ -34,18 +33,18 @@ select {
   width: 4rem;
   margin-left: 1rem;
 }
+h1 {
+  margin-block: 0;
+}
+span {
+  margin-inline: 0.2rem;
+}
 .flex-frame {
   border: 2px solid #f5f5f5;
   border-radius: 5%;
   margin: 0 1rem;
   overflow: hidden;
   background-color: white;
-}
-.p-in-image {
-  position: fixed;
-  top: 18rem;
-  margin: 0 1rem;
-  font-size: 0.75rem;
 }
 .griddiv {
   display: grid;
@@ -65,7 +64,7 @@ select {
   background-color: white;
   width: 100%;
   text-align: center;
-  padding: 0.25rem;
+  padding: 0.5rem;
   font-size: 1.25rem;
 }
 .size-select {
@@ -82,24 +81,74 @@ select {
   background-color: #485fb9;
   color: white;
   text-align: center;
-  padding: 0.25rem;
+  padding: 0.5rem;
   font-size: 1.25rem;
   border-radius: 5%;
 }
-.e-info-1 {
+.above-photo-one {
+  background-color: #b1b1b2;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
   position: absolute;
-  top: 0.5rem;
-  left: 24rem;
-  background-color: rgb(224, 220, 220, 70%);
-  border-radius: 5%;
-  margin-top: 0.5rem;
-  text-align: right;
+  width: 10rem;
+  text-align: center;
+  left: 20rem;
+  top: 1rem;
 }
-.e-info-2 {
+.above-photo-two {
+  background-color: #b1b1b2;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
   position: absolute;
-  top: 0.5rem;
+  width: 10rem;
+  top: 1rem;
   right: 3rem;
-  background-color: rgb(224, 220, 220, 70%);
-  border-radius: 5%;
-  margin-top: 0.5rem;
+  text-align: center;
+}
+.below-photo {
+  position: relative;
+  bottom: 2rem;
+  left: 1rem;
+  font-size: 0.75rem;
+}
+.gradient {
+  position: relative;
+  bottom: 4.5rem;
+  color: transparent;
+  padding: 2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 193, 195, 0) 0%,
+    white 90%,
+    rgb(255, 255, 255) 100%
+  );
+}
+.dot {
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  top: 0.3rem;
+  border: 0.1rem solid white;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.black {
+  background-color: black;
+}
+.green {
+  background-color: olive;
+}
+.blueish {
+  background-color: rgb(62, 152, 182);
+}
+.pink {
+  background-color: rgba(221, 143, 156, 0.973);
 }
